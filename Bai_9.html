@@ -5,6 +5,17 @@
     <title>Bai_9</title>
 </head>
 <body>
+<script>
+    let a = +prompt("Nhập số a:");
+    let b = +prompt("Nhập số b:");
+    let c = +prompt("Nhập số c:");
 
+    if (((a && b && c) > 0) && (a + b) > c && (b + c) > a && (a + c) > b){
+        alert("a,b,c là cạnh của một tam giác!");
+    }
+    else {
+        alert("a,b,c không phải là cạnh của một tam giác!");
+    }
+</script>
 </body>
 </html>
