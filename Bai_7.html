@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số a:");
+    let b = +prompt("Nhập số b:");
+    let c = +prompt("Nhập số c:");
+    let S = (b * b) - 4 * a * c;
+    let result= "Phương trình ";
+    if (S < 0){
+        result += "vô nghiệm.";
+    }
+    else if (S == 0){
+        result += "có nghiệm kép là x1 = x2 = " + "-" + b / 2 * a;
+    }
+    else{
+        result += "có 2 nghiệm phân biệt x1 = '" + ((-b + Math.sqrt(S)/2*a)) + "' và x2 = '" + ((-b - Math.sqrt(S)/2*a)) + "'";
+    }
+    alert(result);
+</script>
+</body>
+</html>

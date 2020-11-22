@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập số a:");
+    let b = prompt("Nhập số b:");
+    let result;
+    if (a == 0){
+        if (b == 0){
+            result = "Phương trình vô số nghiệm!";
+        }
+        else {
+            result = "Phương trình vô nghiệm!";
+        }
+    }
+    else{
+        b =- b;
+        result = "Phương trình có nghiệm x=-b/a" + "\n" + b + " / " + a + " = " + ( b / a );
+    }
+    alert(result);
+</script>
+</body>
+</html>

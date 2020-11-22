@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập độ dài cạnh a(cm):");
+    let b = prompt("Nhập độ dài cạnh b(cm):");
+    if (!isNaN(a) && !isNaN(b)){
+        let sHinhCN = parseInt(a) * parseInt(b);
+        alert("Diện tích hình chữ nhật là: " + sHinhCN);
+    }
+    else{
+        alert(a + " hoặc " + b + " không phải là một số!");
+    }
+</script>
+</body>
+</html>
